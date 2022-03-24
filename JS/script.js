@@ -51,7 +51,10 @@ const init = function () {
 };
 
 // Starting Game
+window.addEventListener('DOMContentLoaded', () {
 init();
+})
+// init();
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = "0";
