@@ -54,7 +54,7 @@ const init = function () {
 // window.addEventListener('DOMContentLoaded', ({
 // init();
 // });
-// init();
+init();
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = "0";
