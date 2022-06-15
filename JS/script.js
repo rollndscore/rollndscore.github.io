@@ -66,6 +66,7 @@ const switchPlayer = function () {
 };
 
 btnRoll.addEventListener("click", function () {
+  console.log("Roll");
   if (playing) {
     rollMusic.play();
     const diceValue = Math.ceil(Math.random() * 6);
@@ -85,6 +86,7 @@ btnRoll.addEventListener("click", function () {
 
 btnHold.addEventListener("click", function () {
   // 1. Add current score to the current active player
+  console.log("Hold");
   if (playing) {
     holdMusic.play();
     scores[activePlayer] += currentScore;
@@ -116,6 +118,7 @@ btnHold.addEventListener("click", function () {
 });
 
 btnNew.addEventListener("click", function () {
+  console.log("New");
   newGameMusic.play();
   init();
 });
