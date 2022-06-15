@@ -21,11 +21,11 @@ const newGameMusic = new Audio("./Sounds/NewGame.wav");
 const holdMusic = new Audio("./Sounds/Hold.wav");
 const switchMusic = new Audio("./SOunds/Switch.wav");
 
-// const playVideo = function () {
-//     const media = this.videoplayer.nativeElement;
-//     media.muted = true; // without this line it's not working although I have "muted" in HTML
-//     media.play();
-// }
+const playVideo = function () {
+  const media = this.videoplayer.nativeElement;
+  media.muted = true; // without this line it's not working although I have "muted" in HTML
+  media.play();
+}
 
 
 // Initialinzing Game Function
@@ -51,9 +51,9 @@ const init = function () {
 };
 
 // Starting Game
-// window.addEventListener('DOMContentLoaded', ({
-// init();
-// });
+window.addEventListener('DOMContentLoaded', () {
+init();
+});
 init();
 
 const switchPlayer = function () {
